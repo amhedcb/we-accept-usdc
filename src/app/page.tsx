@@ -1,11 +1,12 @@
 import { BusinessTable } from "@/components/business-table";
+import { MapContainer } from "@/components/map-container";
+import { MapLocator } from "@/components/map-locator";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <BusinessTable />
-      </div>
+    <main className="flex flex-col min-h-screen items-center justify-between py-24">
+      <MapContainer />
+      {/* <BusinessTable /> */}
     </main>
   );
 }
