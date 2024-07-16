@@ -24,8 +24,8 @@ export default function Layout({ children }: Readonly<{
       <body 
         className={cn(
           'antialiased',
-          fontHeading.variable,
-          fontBody.variable
+          (fontHeading as any).variable,
+          (fontBody as any).variable
         )}
       >
         {children}

@@ -119,31 +119,19 @@ export function BusinessTable() {
       <div className="grid grid-cols-5 gap-4 mb-4">
         <div>
           <Input
-            placeholder="Search Business Name"
+            placeholder="Name..."
             value={columnSearchTerms.name}
             onChange={(e) => handleColumnSearch("name", e.target.value)}
             className="w-full bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-md py-2 px-4 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
           />
         </div>
         <div>
-          <Input
-            placeholder="Search Location"
-            value={columnSearchTerms.location}
-            onChange={(e) => handleColumnSearch("location", e.target.value)}
-            className="w-full bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-md py-2 px-4 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
-          />
+        </div>
+        <div>
         </div>
         <div>
           <Input
-            placeholder="Search Website"
-            value={columnSearchTerms.website}
-            onChange={(e) => handleColumnSearch("website", e.target.value)}
-            className="w-full bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-md py-2 px-4 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
-          />
-        </div>
-        <div>
-          <Input
-            placeholder="Search Country"
+            placeholder="Country..."
             value={columnSearchTerms.country}
             onChange={(e) => handleColumnSearch("country", e.target.value)}
             className="w-full bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-md py-2 px-4 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
@@ -151,7 +139,7 @@ export function BusinessTable() {
         </div>
         <div>
           <Input
-            placeholder="Search Business Type"
+            placeholder="Business Type..."
             value={columnSearchTerms.type}
             onChange={(e) => handleColumnSearch("type", e.target.value)}
             className="w-full bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-md py-2 px-4 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
